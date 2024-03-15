@@ -1,11 +1,11 @@
 terraform {
-  backend "s3" {
-    bucket         = "mordor2-terraform-state" # Use the appropriate bucket name for each project
-    key            = "stage/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "mordor-terraform-state-lock"
-    encrypt        = true
-  }
+  ##backend "s3" {
+##    bucket         = "mordor2-terraform-state" # Use the appropriate bucket name for each project
+##    key            = "stage/terraform.tfstate"
+##    region         = "us-east-1"
+##    dynamodb_table = "mordor-terraform-state-lock"
+##    encrypt        = true
+##  }
 }
 
 provider "aws" {
